@@ -1,5 +1,5 @@
 .footerContent {
-  background-image: url("flip-bg.png");
+  background-image: url("/flip-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
