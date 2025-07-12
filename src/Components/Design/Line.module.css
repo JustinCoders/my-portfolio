@@ -1,0 +1,10 @@
+.line {
+  width: 100px;
+  position: relative;
+  right: 25px;
+  margin-bottom: 3px;
+}
+
+.line:nth-child(even) {
+  left: 25px;
+}

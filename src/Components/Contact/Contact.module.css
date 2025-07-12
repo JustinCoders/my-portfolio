@@ -1,0 +1,156 @@
+:root {
+  --headingMobile: 2rem;
+  --paragraphMobile: 1rem;
+}
+
+.contact {
+  margin: 50px 8%;
+}
+
+.contactHeader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactHeader h1 {
+  font-weight: 400;
+  font-size: 2.2rem;
+}
+
+.contactForm {
+  display: flex;
+  gap: 20px;
+  padding: 50px 0;
+  flex-wrap: wrap; /* In case you want wrap on smaller screens */
+}
+
+.contactImg,
+.contactContent {
+  flex: 1;
+}
+
+.contactImg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactImg img {
+  width: 100%;
+  height: auto;
+  max-width: 400px; /* You can adjust this value */
+  display: block;
+}
+
+.contactContent h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #202020;
+}
+
+.contactContent h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #202020;
+}
+
+.contactContent p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #202020;
+  margin-bottom: 20px;
+}
+
+.formContent {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.personalInfo {
+  display: flex;
+  gap: 10px;
+}
+
+.personalInfo > .formControl {
+  width: 100%;
+}
+
+.formControl {
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(32, 32, 32, 0.8);
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.formControlTextArea {
+  height: 100px;
+  resize: none;
+}
+
+.btnSubmit {
+  background-color: #202020;
+  border: none;
+  border-radius: 3px;
+  color: #fff;
+  padding: 10px 25px;
+  width: 150px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+  &:hover {
+    background-color: #fff;
+    color: #202020;
+    border: 1px solid #202020;
+    scale: 1.01;
+  }
+}
+
+.btnSubmit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btnSent {
+  background-color: #28a745 !important; /* Bootstrap green */
+  color: white !important;
+  border: none;
+  cursor: not-allowed;
+  box-shadow: 0 4px 12px rgba(40, 167, 69, 0.4);
+  width: 170px;
+}
+
+@media (max-width: 981px) {
+  .contact {
+    margin-bottom: 0;
+  }
+  .contactForm {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contactImg img {
+    max-width: 300px;
+  }
+
+  .contactContent h2 {
+    font-size: var(--headingMobile);
+  }
+
+  .contactContent p {
+    font-size: var(--paragraphMobile);
+  }
+}
+
+@media (max-width: 486px) {
+  .contactHeader > h1,
+  .contactContent h1 {
+    font-size: var(--headingMobile);
+  }
+}

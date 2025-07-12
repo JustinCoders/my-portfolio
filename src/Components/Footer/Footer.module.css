@@ -1,0 +1,92 @@
+.footerContent {
+  background-image: url("flip-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+.logoContainer {
+  padding: 100px 8% 50px;
+  color: #faead6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 3px;
+}
+
+.footerName {
+  font-weight: 200;
+  letter-spacing: 3px;
+  margin-bottom: 10px;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: space-around;
+  width: 600px;
+  margin-bottom: 10px;
+}
+
+.footerNav > a {
+  color: #fff;
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.socialContainer {
+  display: flex;
+  gap: 10px;
+}
+
+.socialIcon {
+  fill: #202020;
+  background-color: #fff;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 3px;
+  width: 35px;
+  height: 35px;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: #202020;
+    fill: #fff;
+    border: 1px solid #fff;
+    scale: 1.1;
+  }
+}
+
+.lineHr {
+  border-bottom: 2px solid #fff;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 981px) {
+  .footerNav {
+    width: 400px;
+  }
+}
+
+@media (max-width: 486px) {
+  .logoContainer {
+    padding-top: 70px;
+  }
+
+  .footerName {
+    font-size: 1.8rem;
+  }
+  .footerNav {
+    width: 300px;
+  }
+}

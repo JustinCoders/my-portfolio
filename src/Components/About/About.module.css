@@ -1,0 +1,90 @@
+:root {
+  --headingMobile: 2rem;
+  --paragraphMobile: 1rem;
+}
+
+.aboutHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutHeader h1 {
+  font-weight: 400;
+  color: #202020;
+  font-size: 2.2rem;
+}
+
+.aboutMe {
+  margin: 50px 8%;
+  color: #202020;
+  display: flex;
+  gap: 20px;
+  font-size: 1.2rem;
+}
+
+.picContainer {
+  display: flex;
+  align-items: center;
+}
+
+.myPic {
+  height: 500px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid rgba(32, 32, 32, 0.5);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    scale: 1.01;
+  }
+}
+
+.whoIAm {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.SkillSet {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.skillWrapper {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+@media (max-width: 981px) {
+  .aboutMe {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .myPic {
+    height: 300px;
+  }
+
+  .SkillSet {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 486px) {
+  .aboutHeader h1 {
+    font-size: var(--headingMobile);
+  }
+
+  .whoIAm {
+    font-size: var(--headingMobile);
+  }
+  .aboutMyself {
+    font-size: var(--paragraphMobile);
+  }
+}
