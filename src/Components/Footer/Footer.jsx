@@ -56,7 +56,7 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://github.com/JustinCodersHub"
+            href="https://github.com/JustinCoders"
             target="_blank"
             rel="noopener noreferrer"
           >
