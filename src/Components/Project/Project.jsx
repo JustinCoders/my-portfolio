@@ -18,21 +18,25 @@ const Project = () => {
             title="Accounting Services"
             url="https://jlqaccountingservices.com/"
           />
-          <ProjectCard imgSrc="/ProjectPhoto/" title="Travel & Tours" url="" />
           <ProjectCard
-            imgSrc="/project2.jpg"
-            title="Disbursment"
-            url="https://example.com/billing"
+            imgSrc="/ProjectPhoto/traveltours.png"
+            title="Travel & Tours"
+            url=""
           />
           <ProjectCard
+            imgSrc="/ProjectPhoto/disbursement.png"
+            title="Disbursement"
+            url="http://disbursement-jp.infinityfreeapp.com"
+          />
+          {/* <ProjectCard
             imgSrc="/project2.jpg"
             title="Billing Invoice"
             url="https://example.com/billing"
-          />
+          /> */}
           <ProjectCard
-            imgSrc="/project3.jpg"
+            imgSrc="/ProjectPhoto/purchaseorder.png"
             title="Purchase Order"
-            url="https://example.com/purchase"
+            url="https://purchase-order-jp.infinityfreeapp.com/purchase-order.php"
           />
           <ProjectCard
             imgSrc="/ProjectPhoto/rpsgame.png"
@@ -40,9 +44,9 @@ const Project = () => {
             url="https://justincodershub.github.io/Rock-Paper-Scissor/"
           />
           <ProjectCard
-            imgSrc="/project5.jpg"
+            imgSrc="/ProjectPhoto/rgbalpha.png"
             title="RGB Alpha"
-            url="https://example.com/rgb"
+            url="https://justincoders-rgb-alpha.vercel.app/"
           />
         </div>
       </div>
