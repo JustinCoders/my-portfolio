@@ -1,5 +1,5 @@
 import style from "../Footer/Footer.module.css";
-import { FaFacebookF } from "react-icons/fa";
+import { FaFacebookF, FaLinkedin } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 import { IoLogoGithub } from "react-icons/io";
 
@@ -40,11 +40,19 @@ const Footer = () => {
         </ul>
         <div className={socialContainer}>
           <a
-            href="https://www.facebook.com/justinpadilla88"
+            href="https://www.linkedin.com/in/justin-padilla-a81355377"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebookF className={socialIcon} />
+            <FaLinkedin className={socialIcon} />
+          </a>
+
+          <a
+            href="https://github.com/JustinCoders"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <IoLogoGithub className={socialIcon} />
           </a>
 
           <a
@@ -56,11 +64,11 @@ const Footer = () => {
           </a>
 
           <a
-            href="https://github.com/JustinCoders"
+            href="https://www.facebook.com/justinpadilla88"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <IoLogoGithub className={socialIcon} />
+            <FaFacebookF className={socialIcon} />
           </a>
         </div>
 
