@@ -24,6 +24,11 @@ const Project = () => {
             url=""
           />
           <ProjectCard
+            imgSrc="/ProjectPhoto/justinflex.png"
+            title="JustinFlex (Movie Review)"
+            url="https://justinflex.vercel.app/"
+          />
+          <ProjectCard
             imgSrc="/ProjectPhoto/disbursement.png"
             title="Disbursement"
             url="http://disbursement-jp.infinityfreeapp.com"
