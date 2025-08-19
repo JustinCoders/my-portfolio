@@ -21,7 +21,12 @@ const Project = () => {
           <ProjectCard
             imgSrc="/ProjectPhoto/traveltours.png"
             title="Travel & Tours"
-            url=""
+            url="#"
+          />
+          <ProjectCard
+            imgSrc="/ProjectPhoto/udmguidance.png"
+            title="UDM Guidance"
+            url="#"
           />
           <ProjectCard
             imgSrc="/ProjectPhoto/justinflex.png"
