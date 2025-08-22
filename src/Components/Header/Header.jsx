@@ -131,7 +131,11 @@ const Header = () => {
         <div>
           <h3 style={{ color: "white", fontWeight: 200, marginBottom: 10 }}>
             <Typewriter
-              words={["<Website Developer />", "<Front-end Developer />"]}
+              words={[
+                "<Full Stack Developer />",
+                "<Front-End Developer />",
+                "<Back-End Developer />"
+              ]}
               loop={0}
               cursor
               cursorStyle="_"

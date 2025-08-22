@@ -23,7 +23,14 @@ const About = () => {
     { label: "CSS", bgColor: "#264de4" },
     { label: "Bootstrap", bgColor: "#7952b3" },
     { label: "JavaScript (ES6+)", bgColor: "#f7df1e" },
-    { label: "React.js", bgColor: "#61dafb" }
+    { label: "React.js", bgColor: "#61dafb" },
+    { label: "Next.js", bgColor: "#000000" }
+  ];
+
+  const backEndSkill = [
+    { label: "PHP", bgColor: "#777BB4" },
+    { label: "Laravel", bgColor: "#FF2D20" },
+    { label: "MySQL", bgColor: "#4479A1" }
   ];
 
   const versionControl = [
@@ -63,7 +70,6 @@ const About = () => {
             gap: "20px"
           }}
         >
-          {/* About MySelf */}
           <div>
             <h1 className={whoIAm}>
               <Typewriter
@@ -104,7 +110,7 @@ const About = () => {
             >
               {/* Front-end */}
               <div className={SkillSet}>
-                <p style={{ fontSize: "1.1rem" }}>Front-end:</p>
+                <p style={{ fontSize: "1.1rem" }}>Front-End:</p>
                 <div className={skillWrapper}>
                   {frontEndSkill.map((skill, index) => (
                     <Skill
@@ -112,7 +118,29 @@ const About = () => {
                       label={skill.label}
                       bgColor={skill.bgColor}
                       textColor={
-                        ["HTML", "CSS", "Bootstrap"].includes(skill.label)
+                        ["HTML", "CSS", "Bootstrap", "Next.js"].includes(
+                          skill.label
+                        )
+                          ? "#fff"
+                          : undefined
+                      }
+                      delay={index * 0.15}
+                    />
+                  ))}
+                </div>
+              </div>
+
+              {/* Back-end */}
+              <div className={SkillSet}>
+                <p style={{ fontSize: "1.1rem" }}>Back-End:</p>
+                <div className={skillWrapper}>
+                  {backEndSkill.map((skill, index) => (
+                    <Skill
+                      key={index}
+                      label={skill.label}
+                      bgColor={skill.bgColor}
+                      textColor={
+                        ["Laravel", "MySQL"].includes(skill.label)
                           ? "#fff"
                           : undefined
                       }
